@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:student="urn:telerikacademy.com:students" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:students="urn:telerikacademy-com:students" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="students">
     <xs:complexType>
       <xs:sequence>
@@ -8,12 +8,14 @@
             <xs:sequence>
               <xs:element name="name" type="xs:string" />
               <xs:element name="sex" type="xs:string" />
-              <xs:element name="birthdate" type="xs:string" />
+              <xs:element name="birthdate" type="xs:date" />
               <xs:element name="phone" type="xs:unsignedInt" />
               <xs:element name="email" type="xs:string" />
               <xs:element name="course" type="xs:string" />
               <xs:element name="specialty" type="xs:string" />
               <xs:element name="facultynumber" type="xs:unsignedInt" />
+              <xs:element name ="enrollmentdate" type="xs:date" />
+              <xs:element name="examscore" type="xs:unsignedInt" />
               <xs:element name="exams">
                 <xs:complexType>
                   <xs:sequence>
@@ -23,6 +25,7 @@
                           <xs:element name="name" type="xs:string" />
                           <xs:element name="tutor" type="xs:string" />
                           <xs:element name="score" type="xs:unsignedByte" />
+                          <xs:element name="tutorendorsements" type="xs:string" minOccurs="0" maxOccurs="1"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>

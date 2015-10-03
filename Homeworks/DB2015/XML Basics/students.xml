@@ -3,17 +3,20 @@
   <student>
     <name>Ivan Ivanov</name>
     <sex>male</sex>
-    <birthdate>01.01.1998</birthdate>
+    <birthdate>1984-06-20</birthdate>
     <phone>0888123456</phone>
     <email>ivan@ivanov.com</email>
     <course>Programing 2015</course>
     <specialty>C#</specialty>
     <facultynumber>12345678</facultynumber>
+    <enrollmentdate>2015-01-01</enrollmentdate>
+    <examscore>99</examscore>
     <exams>
       <exam>
         <name>C#1</name>
         <tutor>Steve Jobs</tutor>
         <score>92</score>
+        <tutorendorsements>C# pro</tutorendorsements>
       </exam>
       <exam>
         <name>C#2</name>
@@ -25,17 +28,20 @@
   <student>
     <name>Petar Petrov</name>
     <sex>male</sex>
-    <birthdate>02.03.1987</birthdate>
+    <birthdate>1985-02-02</birthdate>
     <phone>0888654321</phone>
     <email>petar@petrov.com</email>
     <course>Web Design and UI 2015</course>
     <specialty>Java Script</specialty>
     <facultynumber>87654321</facultynumber>
+    <enrollmentdate>2015-02-05</enrollmentdate>
+    <examscore>83</examscore>
     <exams>
       <exam>
         <name>Java Script</name>
         <tutor>Bill Gates</tutor>
         <score>78</score>
+        <tutorendorsements>Like a pro!</tutorendorsements>
       </exam>
       <exam>
         <name>Java Script OOP</name>
@@ -47,12 +53,14 @@
   <student>
     <name>Hristo Hristov</name>
     <sex>male</sex>
-    <birthdate>01.01.1980</birthdate>
+    <birthdate>1980-12-20</birthdate>
     <phone>0888456123</phone>
     <email>hristo@hristov.com</email>
     <course>Software Technologies 2015</course>
     <specialty>Data bases</specialty>
     <facultynumber>12348765</facultynumber>
+    <enrollmentdate>2015-03-22</enrollmentdate>
+    <examscore>77</examscore>
     <exams>
       <exam>
         <name>Databases</name>
