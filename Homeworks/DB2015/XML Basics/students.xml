@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<students>
+<students xmlns:student="urn:telerikacademy.com:students">
   <student>
     <name>Ivan Ivanov</name>
     <sex>male</sex>
+    <birthdate>01.01.1998</birthdate>
+    <phone>0888123456</phone>
+    <email>ivan@ivanov.com</email>
+    <course>Programing 2015</course>
+    <specialty>C#</specialty>
+    <facultynumber>12345678</facultynumber>
+    <exams>
+      <exam>
+        <name>C#1</name>
+        <tutor>Steve Jobs</tutor>
+        <score>92</score>
+      </exam>
+      <exam>
+        <name>C#2</name>
+        <tutor>Petar Stoyanov</tutor>
+        <score>82</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Petar Petrov</name>
+    <sex>male</sex>
+    <birthdate>02.03.1987</birthdate>
+    <phone>0888654321</phone>
+    <email>petar@petrov.com</email>
+    <course>Web Design and UI 2015</course>
+    <specialty>Java Script</specialty>
+    <facultynumber>87654321</facultynumber>
+    <exams>
+      <exam>
+        <name>Java Script</name>
+        <tutor>Bill Gates</tutor>
+        <score>78</score>
+      </exam>
+      <exam>
+        <name>Java Script OOP</name>
+        <tutor>Yordan Yordanov</tutor>
+        <score>72</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Hristo Hristov</name>
+    <sex>male</sex>
+    <birthdate>01.01.1980</birthdate>
+    <phone>0888456123</phone>
+    <email>hristo@hristov.com</email>
+    <course>Software Technologies 2015</course>
+    <specialty>Data bases</specialty>
+    <facultynumber>12348765</facultynumber>
+    <exams>
+      <exam>
+        <name>Databases</name>
+        <tutor>Elton John</tutor>
+        <score>67</score>
+      </exam>
+      <exam>
+        <name>Web Service and cloud</name>
+        <tutor>James Bond</tutor>
+        <score>80</score>
+      </exam>
+    </exams>
   </student>
 </students>
-      
