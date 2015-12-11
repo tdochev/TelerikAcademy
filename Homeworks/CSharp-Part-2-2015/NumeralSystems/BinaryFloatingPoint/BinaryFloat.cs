@@ -19,7 +19,7 @@ class BinaryFloat
         {
             result = Convert.ToString(byteArray[i], 2).PadLeft(8, '0') + result;
         }
-        string sign = new string(result[0],1);
+        string sign = result.Substring(0,1);
         string exponent = result.Substring(1, 8);
         string mantissa = result.Substring(9, 22);
         Console.WriteLine(formatter, "number", "sign", "exponent", "mantissa");
