@@ -11,7 +11,7 @@ class BinaryFloat
     const string formatter = "{0,-10}{1,-10}{2,-10}{3,-20}";
     static void Main()
     {
-        Console.WriteLine("Please enter a C# short to get its binary representation:");
+        Console.WriteLine("Please enter a C# float to get its binary representation:");
         float input = float.Parse(Console.ReadLine());
         string result = string.Empty;
         byte[] byteArray = BitConverter.GetBytes(input);
