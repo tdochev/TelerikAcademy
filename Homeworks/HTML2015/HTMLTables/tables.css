@@ -1,0 +1,27 @@
+#table1 {
+	width: 35%;
+}
+
+#table1 td{
+	width: 50%;
+}
+
+#table2 td {
+	width: 28px;
+}
+
+td.centered {
+    text-align: center;
+}
+
+td.left {
+    text-align: left;
+}
+
+td.bottom {
+	vertical-align: bottom;
+}
+
+td.right {
+    text-align: right;
+}
