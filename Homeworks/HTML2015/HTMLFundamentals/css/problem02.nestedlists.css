@@ -1,0 +1,19 @@
+li ol{
+	padding-left: 15px;
+}
+
+li {
+    padding-left: 15px;
+}
+
+ul[type="circle"] {
+    padding-left: 45px;
+}
+
+ul[type="square"] {
+    padding-left: 45px;
+}
+
+ul[type="disc"] {
+    padding-left: 10px;
+}
