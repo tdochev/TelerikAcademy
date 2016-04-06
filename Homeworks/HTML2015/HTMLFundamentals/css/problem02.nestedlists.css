@@ -6,14 +6,16 @@ li {
     padding-left: 15px;
 }
 
-ul[type="circle"] {
+ul.circle{
+	list-style-type: circle;
     padding-left: 45px;
 }
 
-ul[type="square"] {
+ul.square {
+	list-style-type: square;
     padding-left: 45px;
 }
 
-ul[type="disc"] {
+ul.disc {
     padding-left: 10px;
 }
