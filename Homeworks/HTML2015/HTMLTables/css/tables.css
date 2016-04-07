@@ -1,5 +1,9 @@
+th{
+	text-align: center;
+}
+
 #table1 {
-	width: 35%;
+	width: 25%;
 }
 
 #table1 td{
@@ -8,6 +12,7 @@
 
 #table2 td {
 	width: 28px;
+
 }
 
 td.centered {
