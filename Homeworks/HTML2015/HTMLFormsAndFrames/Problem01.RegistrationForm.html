@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Problem01.RegistrationForm</title>
+    <link rel="stylesheet" href="css/registrationform.css">
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td>
+                    <label for="lastname">Last Name</label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="lastname" value="Nakov" class="maxWidth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="firstname">First Name</label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="firstname" value="Svetlin" class="maxWidth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td colspan="3">
+                    <textarea name="address" id="address" rows="4" cols="40">17, Hristo Botev Str. &#13;&#10;floor 3, apt. 12</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <input type="text" id="city" value="Kaspichan">
+                </td>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <input type="text" id="state" class="minWidth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zip">ZIP/Postal Code</label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="zip" value="9325" class="minWidth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td colspan="3">
+                    <select name="country" id="country">
+                        <Option>Bulgaria</Option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone (country code, area code, number)</label>
+                </td>
+                <td colspan="3">(+
+                    <input type="number" value="359" class="minWidth">)
+                    <input type="number" value="88" class="minWidth">-
+                    <input type="number" value="8334343">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-mail</label>
+                </td>
+                <td colspan="3">
+                    <input type="email" value="nakov@kaspichan.org">
+                </td>
+            </tr>
+            <tr>
+                <td>Birth date</td>
+                <td colspan="3">
+                    <label for="month">Month </label>
+                    <input type="number" id="month" min="1" max="12" value="06" class="minWidth">
+                    <label for="date">Date </label>
+                    <input type="number" id="date" min="1" max="31" value="14" class="minWidth">
+                    <label for="year">Year </label>
+                    <input type="number" id="year" min="1900" max="2016" value="1980" class="minWidth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td colspan="3">
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Starting Date
+                </td>
+                <td colspan="3">
+                    <input type="radio" name="startingdate" value="Spring 2006" checked> Spring 2006
+                    <input type="radio" name="startingdate" value="Summer 2006"> Summer 2006
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments">Comments/Questions</label>
+                </td>
+                <td colspan="3">
+                    <textarea id="comments" rows="6" cols="40">Please send me more information about the lodging</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear This Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+table {
+    border-spacing: 0px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+td {
+    border: 1px solid darkgray;
+}
+
+tbody {	
+background-color: lightgray;
+
+}
+tfoot td {
+	border: none;
+}
+
+#results {
+	float: right;
+}

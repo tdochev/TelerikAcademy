@@ -1,0 +1,34 @@
+body {
+    font-family: georgia;
+}
+
+#maintable {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#notebookstable {
+    border: 1px solid black;
+}
+
+#brands {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+img {
+    width: 120px;
+}
+
+a {
+    font-size: 18px;
+    color: darkblue;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+#sliderTable td {
+    padding-top: 25px;
+}

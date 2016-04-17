@@ -1,0 +1,5 @@
+table, th, td, tfoot {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    	padding: 2px 5px 2px 5px;
+}
