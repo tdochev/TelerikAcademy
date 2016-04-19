@@ -5,23 +5,50 @@ table {
 
 table td {
     border: 1px solid black;
-    width: 100px;
+    width: 70px;
+
 }
 
 tr:last-child {
-    background: lightgreen;
+    background: #D1EDE1;
     text-align: center;
 }
 
+tr td:first-child {
+    text-align: right;
+}
 
 textarea {
-	resize: none;
+    resize: none;
+}
+
+input {
+	margin: 4px;	
 }
 
 .minWidth {
-	width: 40px;
+    width: 36px;
 }
 
 .maxWidth {
-	width: 90%;
+    width: 90%;
+}
+
+#statelabel {
+    text-align: center;
+    width: 10%;
+}
+
+#state {
+    display: inline-block;
+    float: right;
+    width: 60px;
+}
+
+#city {
+    width: 200px;
+}
+
+#submit {
+	text-align: center;
 }

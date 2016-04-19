@@ -12,7 +12,7 @@
         <table>
             <tr>
                 <td>
-                    <label for="lastname">Last Name</label>
+                    <label for="lastname"><strong>Last Name</strong></label>
                 </td>
                 <td colspan="3">
                     <input type="text" id="lastname" value="Nakov" class="maxWidth">
@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="firstname">First Name</label>
+                    <label for="firstname"><strong>First Name</strong></label>
                 </td>
                 <td colspan="3">
                     <input type="text" id="firstname" value="Svetlin" class="maxWidth">
@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="address">Address</label>
+                    <label for="address"><strong>Address</strong></label>
                 </td>
                 <td colspan="3">
                     <textarea name="address" id="address" rows="4" cols="40">17, Hristo Botev Str. &#13;&#10;floor 3, apt. 12</textarea>
@@ -36,13 +36,13 @@
             </tr>
             <tr>
                 <td>
-                    <label for="city">City</label>
+                    <label for="city"><strong>City</strong></label>
                 </td>
                 <td>
                     <input type="text" id="city" value="Kaspichan">
                 </td>
-                <td>
-                    <label for="state">State</label>
+                <td id="statelabel">
+                    <label for="state"><strong>State</strong></label>
                 </td>
                 <td>
                     <input type="text" id="state" class="minWidth">
@@ -50,7 +50,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="zip">ZIP/Postal Code</label>
+                    <label for="zip"><strong>ZIP/Postal Code</strong></label>
                 </td>
                 <td colspan="3">
                     <input type="text" id="zip" value="9325" class="minWidth">
@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="country">Country</label>
+                    <label for="country"><strong>Country</strong></label>
                 </td>
                 <td colspan="3">
                     <select name="country" id="country">
@@ -68,7 +68,7 @@
             </tr>
             <tr>
                 <td>
-                    <label>Phone (country code, area code, number)</label>
+                    <label><strong>Phone (country code, area code, number)</strong></label>
                 </td>
                 <td colspan="3">(+
                     <input type="number" value="359" class="minWidth">)
@@ -78,26 +78,26 @@
             </tr>
             <tr>
                 <td>
-                    <label for="email">E-mail</label>
+                    <label for="email"><strong>E-mail</strong></label>
                 </td>
                 <td colspan="3">
                     <input type="email" value="nakov@kaspichan.org">
                 </td>
             </tr>
             <tr>
-                <td>Birth date</td>
+                <td><strong>Birth date</strong></td>
                 <td colspan="3">
                     <label for="month">Month </label>
                     <input type="number" id="month" min="1" max="12" value="06" class="minWidth">
                     <label for="date">Date </label>
                     <input type="number" id="date" min="1" max="31" value="14" class="minWidth">
-                    <label for="year">Year </label>
+                    <label for="year">Year (4 digit)</label>
                     <input type="number" id="year" min="1900" max="2016" value="1980" class="minWidth">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="gender">Gender</label>
+                    <label for="gender"><strong>Gender</strong></label>
                 </td>
                 <td colspan="3">
                     <select name="gender" id="gender">
@@ -107,9 +107,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    Starting Date
-                </td>
+                <td><strong>Starting Date</strong></td>
                 <td colspan="3">
                     <input type="radio" name="startingdate" value="Spring 2006" checked> Spring 2006
                     <input type="radio" name="startingdate" value="Summer 2006"> Summer 2006
@@ -117,14 +115,14 @@
             </tr>
             <tr>
                 <td>
-                    <label for="comments">Comments/Questions</label>
+                    <label for="comments"><strong>Comments/Questions</strong></label>
                 </td>
                 <td colspan="3">
                     <textarea id="comments" rows="6" cols="40">Please send me more information about the lodging</textarea>
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="4" id="submit">
                     <input type="submit" value="Submit">
                     <input type="reset" value="Clear This Form">
                 </td>

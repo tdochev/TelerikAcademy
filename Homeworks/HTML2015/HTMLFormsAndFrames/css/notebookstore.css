@@ -2,6 +2,23 @@ body {
     font-family: georgia;
 }
 
+fieldset {
+        border-color: black;
+        border-style: 1px solid;
+}
+
+img {
+    width: 120px;
+}
+
+a {
+    font-size: 18px;
+    color: #0CB1F1;
+    display: inline-block;
+    padding: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
+}
+
 #maintable {
     border: 1px solid black;
     border-radius: 5px;
@@ -15,18 +32,6 @@ body {
     text-align: center;
     width: 100%;
     border-bottom: 1px solid black;
-}
-
-img {
-    width: 120px;
-}
-
-a {
-    font-size: 18px;
-    color: darkblue;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
 }
 
 #sliderTable td {

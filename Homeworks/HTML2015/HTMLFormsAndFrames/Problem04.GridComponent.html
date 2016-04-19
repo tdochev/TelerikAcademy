@@ -13,7 +13,7 @@
             <tr>
                 <td colspan="6">Drag a column header and drop it hear to group by that column</td>
             </tr>
-            <tr>
+            <tr id="header">
                 <td>ProductID</td>
                 <td>Product name</td>
                 <td>Unit price</td>
@@ -30,15 +30,18 @@
                 </td>
                 <td>
                     <input type="text">
+                    <button><img src="images/Filter.png" alt="filter"></button>
                 </td>
                 <td>
                     <input type="text">
                 </td>
                 <td>
                     <input type="text">
+                    <button><img src="images/Filter.png" alt="filter"></button>
                 </td>
                 <td>
                     <input type="checkbox">
+                    <button><img src="images/Filter.png" alt="filter"></button>
                 </td>
             </tr>
         </thead>
@@ -130,7 +133,7 @@
                 <td>18 - 500g pkgs.</td>
                 <td>29</td>
                 <td>
-                    <input type="checkbox" class="discontinued" checked="cheked" disabled="disabled">
+                    <input type="checkbox" class="discontinued" checked="checked" disabled="disabled">
                 </td>
             </tr>
             <tr>
@@ -143,40 +146,39 @@
                     <input type="checkbox" class="discontinued" disabled="disabled">
                 </td>
             </tr>
-            <tfoot>
-                <tr>
-                    <td colspan="2">
-                        <button id="first"></button>
-                        <button id="prev"></button>
-                        <a href="#" class="page" id="selected">1</a>
-                        <a href="#" class="page">2</a>
-                        <a href="#" class="page">3</a>
-                        <a href="#" class="page">4</a>
-                        <a href="#" class="page">5</a>
-                        <a href="#" class="page">6</a>
-                        <a href="#" class="page">7</a>
-                        <a href="#" class="page">8</a>
-                        <a href="#" class="page">9</a>
-                        <a href="#" class="page">10</a>
-                        <a href="#" class="page">...</a>
-                        <button id="next"></button>
-                        <button id="last"></button>
-                        </td>
-                        <td colspan="2">
-                        <span id="pageSieze">Page size:</span>
-                        <select name="pageSize">
-                            <option value="">10</option>
-                            <option value="">20</option>
-                            <option value="">50</option>
-                        </select>
-                        </td>
-                        <td colspan="2">
-                        <span id="results">335104 items in 33511 pages</span>
-                        </td>
-                    </td>
-                </tr>
-            </tfoot>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <button id="first"><img src="images/first.png" alt="first"></button>
+                    <button id="previous"><img src="images/previous.png" alt="previous"></button>
+                    <a href="#" class="page" id="selected">1</a>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="page">3</a>
+                    <a href="#" class="page">4</a>
+                    <a href="#" class="page">5</a>
+                    <a href="#" class="page">6</a>
+                    <a href="#" class="page">7</a>
+                    <a href="#" class="page">8</a>
+                    <a href="#" class="page">9</a>
+                    <a href="#" class="page">10</a>
+                    <a href="#" class="page">...</a>
+                    <button id="next"><img src="images/next.png" alt="next"></button>
+                    <button id="last"><img src="images/last.png" alt="last"></button>
+                </td>
+                <td colspan="2">
+                    <span id="pageSieze">Page size:</span>
+                    <select name="pageSize">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">50</option>
+                    </select>
+                </td>
+                <td colspan="2">
+                    <span id="results">335104 items in 33511 pages</span>
+                </td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
