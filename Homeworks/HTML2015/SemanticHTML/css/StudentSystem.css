@@ -1,0 +1,46 @@
+    body {
+        font-family: Verdana, sans-serif;
+        font-size: 0.8em;
+    }
+    
+    nav,
+    section,
+    article,
+    footer {
+        border: none;
+        margin: 4px;
+        padding: 8px;
+    }
+
+    header {
+        border: none;
+        margin: 4px;
+        padding: 8px;
+        display: inline-block;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 5px;
+    }
+    
+    h1,
+    #welcome {
+        display: inline-block;
+    }
+    
+    #welcome {
+        padding-left: 40em;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+    }
