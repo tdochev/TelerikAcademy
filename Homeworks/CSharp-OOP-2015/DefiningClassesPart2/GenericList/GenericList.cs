@@ -169,6 +169,11 @@ namespace GenericList
             return currentMax;
         }
 
+        public int CompareTo(T other)
+        {
+            throw new NotImplementedException();
+        }
+
         private void Autogrow(T[] t)
         {
             if (this.Count == this.arrayOfElements.Length)
@@ -190,18 +195,13 @@ namespace GenericList
                 throw new IndexOutOfRangeException($"Invalid index: {index}.");
             }
         }
-    
+
         private void ArrayIsNotEmpty()
         {
             if (this.count == 0)
             {
                 throw new ArgumentException("The GenericList is empty!");
             }
-        }
-
-        public int CompareTo(T other)
-        {
-            throw new NotImplementedException();
         }
     }
 }
