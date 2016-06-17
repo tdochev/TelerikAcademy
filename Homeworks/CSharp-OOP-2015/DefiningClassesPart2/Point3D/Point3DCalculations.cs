@@ -8,9 +8,9 @@ namespace Point3D
     {
         public static double CalculateDistance(Point3D firstPoint, Point3D secondPoint)
         {
-            double xdistance = Math.Pow(secondPoint.X - firstPoint.X, 2);
-            double ydistance = Math.Pow(secondPoint.Y - firstPoint.Y, 2);
-            double zdistance = Math.Pow(secondPoint.Z - firstPoint.Z, 2);
+            double xdistance = (secondPoint.X - firstPoint.X) * (secondPoint.X - firstPoint.X);
+            double ydistance = (secondPoint.Y - firstPoint.Y) * (secondPoint.Y - firstPoint.Y);
+            double zdistance = (secondPoint.Z - firstPoint.Z) * (secondPoint.Z - firstPoint.Z);
             return Math.Sqrt(xdistance + ydistance + zdistance);
         }
     }

@@ -29,9 +29,9 @@ namespace Point3D
             }
         }
 
-        public static List<PathOfPoints> LoadPathsFromFile()
+        public static List<Path> LoadPathsFromFile()
         {
-            var paths = new List<PathOfPoints>();
+            var paths = new List<Path>();
             var pathReader = new StreamReader(LoadFilePath);
             using (pathReader)
             {
@@ -39,7 +39,7 @@ namespace Point3D
                 for (int i = 0; i < numberOfPaths; i++)
                 {
                     int numberOfPointsinPath = int.Parse(pathReader.ReadLine());
-                    var path = new PathOfPoints();
+                    var path = new Path();
                     string[] currentLine;
                     for (int k = 0; k < numberOfPointsinPath; k++)
                     {
@@ -57,7 +57,7 @@ namespace Point3D
             return paths;
         }
 
-        public static void SavePathsToFile(List<PathOfPoints> paths)
+        public static void SavePathsToFile(List<Path> paths)
         {
             var pathWriter = new StreamWriter(SaveFilePath);
             using (pathWriter)

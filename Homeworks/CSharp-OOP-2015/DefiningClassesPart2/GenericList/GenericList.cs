@@ -4,6 +4,7 @@
 namespace GenericList
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Text;
 
@@ -186,17 +187,21 @@ namespace GenericList
         {
             if (index >= this.count)
             {
-                throw new IndexOutOfRangeException(string.Format(
-                    "Invalid index: {0}.", index));
+                throw new IndexOutOfRangeException($"Invalid index: {index}.");
             }
         }
-
+    
         private void ArrayIsNotEmpty()
         {
             if (this.count == 0)
             {
                 throw new ArgumentException("The GenericList is empty!");
             }
+        }
+
+        public int CompareTo(T other)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -28,10 +28,15 @@
             anothertestMatrix[0, 1] = 6;
             anothertestMatrix[1, 0] = 7;
             anothertestMatrix[1, 1] = 8;
+            Console.WriteLine("First matrix:");
             Console.WriteLine(testMatrix);
+            Console.WriteLine("Second matrix");
             Console.WriteLine(anothertestMatrix);
+            Console.WriteLine("First matrix + second matrix:");
             Console.WriteLine(testMatrix + anothertestMatrix);
+            Console.WriteLine("First matrix - second matrix:");
             Console.WriteLine(anothertestMatrix - testMatrix);
+            Console.WriteLine("First matrix * second matrix:");
             Console.WriteLine(testMatrix * anothertestMatrix);
         }
     }

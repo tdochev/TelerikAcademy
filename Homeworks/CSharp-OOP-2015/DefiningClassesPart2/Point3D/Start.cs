@@ -23,19 +23,19 @@
             Console.WriteLine(firstPoint);
             Console.WriteLine(secondPoint);
             Console.WriteLine("Distance: " + Point3DCalculations.CalculateDistance(firstPoint, secondPoint));
-            var firstPath = new PathOfPoints();
+            var firstPath = new Path();
             firstPath.AddPoint(firstPoint);
             firstPath.AddPoint(secondPoint);
-            var secondPath = new PathOfPoints();
+            var secondPath = new Path();
             secondPath.AddPoint(thirdPoint);
             secondPath.AddPoint(forthPoint);
-            var paths = new List<PathOfPoints>();
+            var paths = new List<Path>();
             paths.Add(firstPath);
             paths.Add(secondPath);
             PathStorage.SavePathsToFile(paths);
-            Console.WriteLine("\nSucssesfuly saved paths to the following file:\n " + Path.GetFullPath(PathStorage.SaveFilePath));
+            Console.WriteLine("\nSucssesfuly saved paths to the following file:\n " + System.IO.Path.GetFullPath(PathStorage.SaveFilePath));
             var pathsLoadedFromFile = PathStorage.LoadPathsFromFile();
-            Console.WriteLine("\nPrinting the points read from the paths saved in the following file:\n " + Path.GetFullPath(PathStorage.LoadFilePath));
+            Console.WriteLine("\nPrinting the points read from the paths saved in the following file:\n " + System.IO.Path.GetFullPath(PathStorage.LoadFilePath));
             foreach (var path in pathsLoadedFromFile)
             {
                 foreach (var point3d in path.PointsPath)

@@ -1,7 +1,7 @@
 ﻿namespace Matrix
 {
     using System;
-
+    using System.Text;
     [Version(1, 10)]
     public class Matrix<T>
     {
@@ -98,18 +98,19 @@
 
         public override string ToString()
         {
-            string result = string.Empty;
+            StringBuilder result = new StringBuilder();
             for (int row = 0; row < this.rows; row++)
             {
                 for (int col = 0; col < this.cols; col++)
                 {
-                    result += string.Format("{0,3}", this.matrixArray[row, col]) + " ";
+                    result.Append($"{this.matrixArray[row, col],3}");
+                    result.Append(" ");
                 }
 
-                result += "\r\n";
+                result.Append(Environment.NewLine);
             }
 
-            return result;
+            return result.ToString();
         }
     }
 }

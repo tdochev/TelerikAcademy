@@ -38,7 +38,7 @@ namespace Point3D
 
         public override string ToString()
         {
-            return string.Format("x = {0}, y = {1}, z = {2}", this.X, this.Y, this.Z);
+            return $"x = {this.X}, y = {this.Y}, z = {this.Z}";
         }
     }
 }
