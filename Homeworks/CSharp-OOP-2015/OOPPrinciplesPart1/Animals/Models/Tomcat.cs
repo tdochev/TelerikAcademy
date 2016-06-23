@@ -7,5 +7,10 @@
         {
             this.AnimalKind = AnimalKind.Cat;
         }
+        
+        public override string ToString()
+        {
+            return base.ToString() + " " + this.AnimalKind + "(Tomcat)" + ".";
+        }
     }
 }

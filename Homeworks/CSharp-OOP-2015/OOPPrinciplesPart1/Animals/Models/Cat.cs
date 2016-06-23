@@ -1,6 +1,6 @@
 ﻿namespace Animals.Models
 {
-    class Cat : Animal
+    public abstract class Cat : Animal
     {
         public Cat(string name, int age, Sex sex) 
             : base(name, age, sex)
@@ -15,7 +15,7 @@
 
         public override string ToString()
         {
-            return ProduceSound() + " " +  base.ToString() + " " + this.AnimalKind + ".";
+            return ProduceSound() + " " +  base.ToString();
         }
     }
 }

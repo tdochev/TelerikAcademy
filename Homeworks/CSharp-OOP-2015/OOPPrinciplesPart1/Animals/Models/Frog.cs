@@ -12,5 +12,10 @@
         {
             return "Ribbit, ribbit!";
         }
+        
+        public override string ToString()
+        {
+            return ProduceSound() + " " + base.ToString() + " " + this.AnimalKind + ".";
+        }
     }
 }
