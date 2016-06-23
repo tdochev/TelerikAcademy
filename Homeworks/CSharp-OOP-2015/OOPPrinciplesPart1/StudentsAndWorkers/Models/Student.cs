@@ -4,14 +4,14 @@
 
     public class Student : Human
     {
-        private uint grade;
+        private int grade;
 
-        public Student(string firstName, string lastName, uint agrade) : base(firstName, lastName)
+        public Student(string firstName, string lastName, int grade) : base(firstName, lastName)
         {
-            this.Grade = agrade;
+            this.Grade = grade;
         }
 
-        public uint Grade
+        public int Grade
         {
             get
             {
@@ -33,7 +33,7 @@
 
         public override string ToString()
         {
-            return base.ToString() + string.Format(", Grade = {0}", this.Grade);
+            return base.ToString() + ($", Grade = {this.Grade}");
         }
     }
 }

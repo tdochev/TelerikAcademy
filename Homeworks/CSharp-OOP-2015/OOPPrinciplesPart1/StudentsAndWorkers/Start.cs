@@ -7,10 +7,10 @@
 
     public class Start
     {
-       private static void Main()
+        private static void Main()
         {
             List<Human> humans = new List<Human>();
-            var students = new List<Student>() 
+            var students = new List<Student>()
             {
             new Student("Ivan", "Ivanov", 2),
             new Student("Petar", "Petrov", 3),

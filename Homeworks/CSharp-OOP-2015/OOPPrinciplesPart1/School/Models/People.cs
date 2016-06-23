@@ -1,6 +1,6 @@
 ﻿namespace School.Models
 {
-    using School.Interfaces;
+    using Interfaces;
 
     public abstract class People : IComment
     {

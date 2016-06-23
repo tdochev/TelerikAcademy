@@ -20,7 +20,7 @@
 
         public override string ToString()
         {
-            return base.ToString() + string.Format(", Weekly Salary = {0}, Work Hours per Day = {1}", this.WeekSalary, this.WorkHoursPerDay);
+            return base.ToString() + ($", Weekly Salary = {this.WeekSalary}, Work Hours per Day = {this.WorkHoursPerDay}");
         }
     }
 }

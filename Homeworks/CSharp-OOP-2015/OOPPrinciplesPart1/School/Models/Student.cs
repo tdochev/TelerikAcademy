@@ -6,11 +6,10 @@
         {
             this.ClassNumber = classNumber;
         }
-
-        public Student(string name, uint classNumber, string comment)
-            : this(name, classNumber)
+        
+        public Student(string name, uint classNumber, string comment) : base(name, comment)
         {
-            this.Comment = comment;
+            this.ClassNumber = classNumber;
         }
 
         public uint ClassNumber { get; private set; }

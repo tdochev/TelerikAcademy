@@ -44,7 +44,7 @@
     <Compile Include="Interfaces\IComment.cs" />
     <Compile Include="Models\Discipline.cs" />
     <Compile Include="Models\People.cs" />
-    <Compile Include="Models\SchoolClass.cs" />
+    <Compile Include="Models\School.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Start.cs" />

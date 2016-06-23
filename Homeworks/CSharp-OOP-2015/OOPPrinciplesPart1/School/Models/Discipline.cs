@@ -1,7 +1,7 @@
 ﻿////Disciplines have a name, number of lectures and number of exercises.
 namespace School.Models
 {
-    using School.Interfaces;
+    using Interfaces;
 
     public class Discipline : IComment
     {

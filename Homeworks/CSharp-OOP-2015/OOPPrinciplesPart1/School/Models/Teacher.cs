@@ -4,17 +4,30 @@
 
     public class Teacher : People
     {
+        private List<Discipline> disciplines;
+
         public Teacher(string name) : base(name)
         {
-            this.Disciplines = new List<Discipline>();
+            this.disciplines = new List<Discipline>();
         }
-
-        public Teacher(string name, string comment)
-            : base(name, comment)
+        public Teacher(string name, string comment) : base(name,comment)
         {
-            this.Disciplines = new List<Discipline>();
+            this.disciplines = new List<Discipline>();
         }
 
-        public List<Discipline> Disciplines { get; set; }
+        public void AddDiscipline(Discipline discipline)
+        {
+            this.disciplines.Add(discipline);
+        }
+
+        public void RemoveDiscipline(Discipline discipline)
+        {
+            this.disciplines.Remove(discipline);
+        }
+
+        public List<Discipline> GetDiscipline()
+        {
+            return new List<Discipline>(this.disciplines);
+        }
     }
 }

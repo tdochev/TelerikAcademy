@@ -1,0 +1,10 @@
+﻿<Properties StartupItem="StudentsAndWorkers/02.StudentsAndWorkers.csproj">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.ItemProperties.01.School PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.02.StudentsAndWorkers PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
