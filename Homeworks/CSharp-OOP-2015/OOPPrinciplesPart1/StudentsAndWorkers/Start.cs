@@ -23,7 +23,7 @@
             new Student("Vampir", "Vampirski", 5),
             new Student("Mirodrag", "Ali", 6),
             };
-            var studentsSortedByGradeAscending = students.OrderBy(g => g.Grade);
+            var studentsSortedByGradeAscending = students.OrderBy(s => s.Grade);
             foreach (var student in studentsSortedByGradeAscending)
             {
                 humans.Add(student);
@@ -44,7 +44,7 @@
                 new Worker("Tomcho", "Tomchev", 300, 7),
                 new Worker("Yordan", "Yordanov", 280, 8),
             };
-            var workersSortedByMoneyPerHourDescending = workers.OrderByDescending(m => m.MoneyPerHour());
+            var workersSortedByMoneyPerHourDescending = workers.OrderByDescending(w => w.MoneyPerHour());
             Console.WindowWidth += 10;
             foreach (var worker in workersSortedByMoneyPerHourDescending)
             {
@@ -53,7 +53,7 @@
             }
 
             Console.WriteLine();
-            var humansSorted = humans.OrderBy(fn => fn.FirstName).ThenBy(ln => ln.LastName);
+            var humansSorted = humans.OrderBy(h => h.FirstName).ThenBy(h => h.LastName);
             foreach (var human in humansSorted)
             {
                 Console.WriteLine(human);
