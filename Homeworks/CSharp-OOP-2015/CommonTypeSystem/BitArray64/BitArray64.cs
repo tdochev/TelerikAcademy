@@ -7,19 +7,21 @@
 
     public class BitArray64 : IEnumerable<int>
     {
+        private ulong bits;
+        
         public BitArray64(ulong number)
         {
-            this.Bits = number;
+            this.bits = number;
         }
 
-        public ulong Bits { get; set; }
+        public ulong Number { get { return this.bits; } }
 
         public int this[int position]
         {
             get
             {
                 this.CheckPostion(position);
-                return (int)(this.Bits >> position) & 1;
+                return (int)(this.bits >> position) & 1;
             }
 
             set
@@ -30,9 +32,9 @@
                 }
 
                 this.CheckPostion(position);
-                if (((int)(this.Bits >> position) & 1) != value)
+                if (((int)(this.bits >> position) & 1) != value)
                 {
-                    this.Bits ^= 1ul << position;
+                    this.bits ^= 1ul << position;
                 }
             }
         }
@@ -62,7 +64,7 @@
 
         public override int GetHashCode()
         {
-            return this.Bits.GetHashCode();
+            return this.bits.GetHashCode();
         }
 
         public override bool Equals(object obj)
@@ -70,7 +72,7 @@
             if (obj as BitArray64 != null)
             {
                 var objAsBitArray64 = obj as BitArray64;
-                if (objAsBitArray64.Bits == this.Bits)
+                if (objAsBitArray64.bits == this.bits)
                 {
                     return true;
                 }

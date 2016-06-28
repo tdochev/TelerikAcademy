@@ -17,6 +17,8 @@
             Console.WriteLine("first == second: " + (firstTest == secondTest));
             Console.WriteLine("first != second: " + (firstTest != secondTest));
             Console.WriteLine("second != third: " + (secondTest == thirdTest));
+            Console.WriteLine(forthTest.Number);
+            Console.WriteLine(forthTest.GetHashCode());
         }
     }
 }
