@@ -109,26 +109,26 @@
         public override string ToString()
         {
             var result = new StringBuilder();
-            result.AppendFormat("Name: {0} {1} {2}\n", this.FirstName, this.MiddleName, this.LastName);
-            result.AppendFormat("SSN: {0}\n", this.SSN);
-            result.AppendFormat("Permanent address: {0}\n", this.PermanentAddress);
-            result.AppendFormat("Mobile phone: {0}\n", this.MobilePhone);
-            result.AppendFormat("E-mail: {0}\n", this.Email);
-            result.AppendFormat("Course: {0}\n", this.Course);
-            result.AppendFormat("Specialty: {0}\n", this.Specialty);
-            result.AppendFormat("University: {0}\n", this.University);
-            result.AppendFormat("Faculty: {0}\n", this.Faculty);
+            result.Append($"Name: {this.FirstName} {this.MiddleName} {this.LastName}{Environment.NewLine}");
+            result.Append($"SSN: {this.SSN}{Environment.NewLine}");
+            result.Append($"Permanent address: {this.PermanentAddress}{Environment.NewLine}");
+            result.AppendFormat($"Mobile phone: {this.MobilePhone}{Environment.NewLine}");
+            result.AppendFormat($"E-mail: {this.Email}{Environment.NewLine}");
+            result.AppendFormat($"Course: {this.Course}{Environment.NewLine}");
+            result.AppendFormat($"Specialty: {this.Specialty}{Environment.NewLine}");
+            result.AppendFormat($"University: {this.University}{Environment.NewLine}");
+            result.AppendFormat($"Faculty: {this.Faculty}{Environment.NewLine}");
             return result.ToString();
         }
 
         public static bool operator ==(Student firstStudent, Student secondStudent)
         {
-            return Student.Equals(firstStudent, secondStudent);
+            return Equals(firstStudent, secondStudent);
         }
 
         public static bool operator !=(Student firstStudent, Student secondStudent)
         {
-            return !Student.Equals(firstStudent, secondStudent);
+            return !Equals(firstStudent, secondStudent);
         }
 
         public object Clone()

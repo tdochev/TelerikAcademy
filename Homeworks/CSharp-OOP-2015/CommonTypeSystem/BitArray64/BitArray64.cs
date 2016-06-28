@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     public class BitArray64 : IEnumerable<int>
     {
@@ -86,6 +87,16 @@
             {
                 throw new IndexOutOfRangeException();
             }
+        }
+
+        public override string ToString()
+        {
+            var result = new StringBuilder();
+            for (int i = 0; i < 64; i++)
+            {
+                result.Insert(0, this[i]);
+            }
+            return result.ToString();
         }
     }
 }

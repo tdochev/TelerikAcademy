@@ -6,19 +6,17 @@
     {
         public static void Main()
         {
-            var firstTest = new BitArray64(ulong.MaxValue - 1);
+            var firstTest = new BitArray64(ulong.MinValue);
             var secondTest = new BitArray64(ulong.MaxValue);
             var thirdTest = new BitArray64(ulong.MaxValue);
-            Console.WriteLine(firstTest[0]);
-            foreach (var item in firstTest)
-            {
-                Console.Write(item);
-            }
-
-            Console.WriteLine();
-            Console.WriteLine(firstTest == secondTest);
-            Console.WriteLine(firstTest != secondTest);
-            Console.WriteLine(secondTest == thirdTest);
+            var forthTest = new BitArray64(100u);
+            Console.WriteLine("First 64 Bit array (ulong min value): " +  firstTest);
+            Console.WriteLine("Second 64 Bit array (ulong max value): " + secondTest);
+            Console.WriteLine("Third 64 Bit array (ulong max value): " + thirdTest);
+            Console.WriteLine("Third 64 Bit array (100): " + forthTest);
+            Console.WriteLine("first == second: " + (firstTest == secondTest));
+            Console.WriteLine("first != second: " + (firstTest != secondTest));
+            Console.WriteLine("second != third: " + (secondTest == thirdTest));
         }
     }
 }

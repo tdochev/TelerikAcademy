@@ -44,7 +44,7 @@
 
         public override string ToString()
         {
-            return string.Format("Name: {0}, Age: {1}", this.Name, this.Age == null ? "Not specified!" : this.Age.ToString());
+            return string.Format("Name: {0}, Age: {1}",this.Name , this.Age == null ? "Not specified!" : this.Age.ToString());
         }
     }
 }
