@@ -20,7 +20,7 @@
         {
             get
             {
-                return String.Format("Invalid Range! The valid rage is [{0}; {1}]", this.Start, this.End);
+                return $"Invalid Range! The valid rage is [{this.Start}; {this.End}]";
             }
         }
 

@@ -4,7 +4,7 @@
 
     public abstract class Account : IDeposit
     {
-        public const string NoFunds = "Insufficient fund to make withdrawal!";
+        public const string NoFunds = "Insufficient funds to make withdrawal!";
         public const string OK = "Transaction successful!";
         public const string Invalid = "Invalid transaction!";
 
@@ -25,7 +25,7 @@
             if (amount > 0)
             {
                 this.Balance += amount;
-                return OK;
+                return OK + $" Deposit of {amount}. Current balance: {this.Balance}";
             }
             return Invalid;
         }
@@ -37,7 +37,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0}, Current balance: {1}, Interest Rate: {2}", this.Customer, this.Balance, this.InterestRate);
+            return $"{this.Customer}, Current balance: {this.Balance}, Interest Rate: {this.InterestRate}";
         }
     }
 }

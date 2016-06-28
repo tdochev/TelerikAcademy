@@ -2,7 +2,7 @@
 {
     using BankAccounts.Interfaces;
 
-    class LoanAccount : Account
+    class LoanAccount : Account, IDeposit
     {
         public LoanAccount(Customer customer, decimal interestRate)
             : base(customer, interestRate)

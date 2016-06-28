@@ -2,7 +2,7 @@
 {
     using BankAccounts.Interfaces;
 
-    public  class DepositAccount : Account, IWithdraw
+    public  class DepositAccount : Account, IWithdraw, IDeposit
     {
         public DepositAccount(Customer customer, decimal interestRate)
             : base(customer, interestRate)
@@ -14,7 +14,7 @@
             if (this.Balance >= amount && amount > 0)
             {
                 this.Balance -= amount;
-                return Account.OK;
+                return Account.OK + $"Withdraw of {amount}. Current Balance: {this.Balance}";
             }
             else if (this.Balance < amount)
             {

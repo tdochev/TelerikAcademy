@@ -1,6 +1,8 @@
 ﻿namespace BankAccounts.Models
 {
-    class MortgageAccount : Account
+    using BankAccounts.Interfaces;
+
+    class MortgageAccount : Account, IDeposit
     {
         public MortgageAccount(Customer customer, decimal interestRate)
             : base(customer, interestRate)
